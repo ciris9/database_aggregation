@@ -1,0 +1,22 @@
+{
+  "pull_database": [
+    {
+      "db_name": "",
+      "dsn": "",
+      "sqls": []
+    },
+    {
+      "db_name": "",
+      "dsn": "",
+      "sqls": []
+    }
+  ],
+  "push_database": [
+    {
+      "db_name": "",
+      "dsn": "",
+      "sqls": []
+    }
+  ],
+  "time_interval": "24h"
+}

@@ -1,0 +1,24 @@
+apollo:
+  AppID: "permission-manager"
+  Cluster: "dev01"
+  Address: "http://apollo-portal.tec-develop.com:8080"
+  NamespaceName: "tec-do2.0.permission_manager"
+  IsBackupConfig: true
+  Secret: "39bfbb6f1d69424ab02ba6f5da265386"
+xxl:
+  app_name: ""
+  admin_address: ""
+  token: ""
+  client_ports: 80800
+  executor_ip: ""
+log:
+  debugFileName: "D://goland//database_aggregation//logs//debug//debug.log"
+  infoFileName: "D://goland//database_aggregation//logs//info//info.log"
+  warnFileName: "D://goland//database_aggregation//logs//warn//warn.log"
+  errorFileName: "D://goland//database_aggregation//logs//error//error.log"
+  dpanicFileName: "D://goland//database_aggregation//logs//dpanic//dpanic.log"
+  panicFileName: "D://goland//database_aggregation//logs//panic//panic.log"
+  fatalFileName: "D://goland//database_aggregation//logs//fatal//fatal.log"
+  maxSize: 500
+  maxAge: 28
+  MaxBackups: 3

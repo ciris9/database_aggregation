@@ -1,0 +1,9 @@
+{
+  "appId": "permission-manager",
+  "cluster": "",
+  "namespaceName": "tec-do2.0.permission_manager",
+  "releaseKey": "",
+  "configurations": {
+    "permission_manager_config": "{\n    \"pull_database\": [\n        {\n            \"db_name\": \"\",\n            \"dsn\": \"\",\n            \"sqls\": []\n        },\n        {\n            \"db_name\": \"\",\n            \"dsn\": \"\",\n            \"sqls\": []\n        }\n    ],\n    \"push_database\": [\n        {\n            \"db_name\": \"\",\n            \"dsn\": \"\",\n            \"sqls\": []\n        }\n    ],\n    \"time_interval\": \"24h\"\n}"
+  }
+}
