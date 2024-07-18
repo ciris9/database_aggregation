@@ -17,6 +17,7 @@ const (
 const (
 	DatabaseColumnID = "id"
 )
+
 const (
 	DatabaseNullData = "NULL"
 )
