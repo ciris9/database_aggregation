@@ -1,2 +1,8 @@
 .idea
-
+logs/debug
+logs/error
+logs/info
+logs/warn
+permission-manager-tec-do2.0.permission_manager.json
+config/example.json
+config/permission-manager-tec-do2.0.permission_manager.json
