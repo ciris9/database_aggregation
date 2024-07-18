@@ -13,3 +13,10 @@ const (
 const (
 	DatabaseAggregationTaskDoneKey = "task permission_database_aggregation done"
 )
+
+const (
+	DatabaseColumnID = "id"
+)
+const (
+	DatabaseNullData = "NULL"
+)

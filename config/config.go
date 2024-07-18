@@ -47,7 +47,7 @@ func initConfig() *config {
 	conf := &config{viper: viper.New()}
 	conf.viper.SetConfigName("config")
 	conf.viper.SetConfigType("yaml")
-	conf.viper.AddConfigPath(".")
+	conf.viper.AddConfigPath("./config")
 	err := conf.viper.ReadInConfig()
 	if err != nil {
 		errors.Wrap(err)
@@ -57,6 +57,9 @@ func initConfig() *config {
 
 	// init apollo config
 	conf.initApolloConfig()
+
+	// init xxl job config
+	conf.initXXLJobConfig()
 
 	configInfo, err := json.Marshal(conf)
 	if err != nil {
@@ -93,4 +96,15 @@ func (c *config) initZapLogConfig() {
 		log.Fatalln(err)
 	}
 	zap.S().Infof("init zap log success , log config: %#v", lc)
+}
+
+func (c *config) initXXLJobConfig() {
+	xc := &xxlJobConfig{
+		AppName:      c.viper.GetString("xxl.app_name"),
+		AdminAddress: c.viper.GetString("xxl.admin_address"),
+		Token:        c.viper.GetString("xxl.token"),
+		ClientPort:   c.viper.GetInt("xxl.client_ports"),
+		ExecutorIp:   c.viper.GetString("xxl.executor_ip"),
+	}
+	c.XXLJobConfig = xc
 }

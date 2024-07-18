@@ -4,6 +4,7 @@ go 1.22.4
 
 require (
 	github.com/apolloconfig/agollo/v4 v4.4.0
+	github.com/go-sql-driver/mysql v1.8.1
 	github.com/natefinch/lumberjack v2.0.0+incompatible
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/viper v1.19.0
@@ -13,6 +14,7 @@ require (
 )
 
 require (
+	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/go-basic/ipv4 v1.0.0 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect

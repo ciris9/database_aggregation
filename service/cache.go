@@ -24,10 +24,8 @@ func newCache() *cache {
 	}
 }
 
-func (c *cache) OnceColumns(dbName string, columns []string) {
-	once.Do(func() {
-		c.Data[dbName].Columns = columns
-	})
+func (c *cache) Columns(dbName string, columns []string) {
+	c.Data[dbName].Columns = columns
 }
 
 func (c *cache) MergeSlice(dbName string, m []string) {
